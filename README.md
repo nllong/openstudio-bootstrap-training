@@ -20,15 +20,15 @@ This repository contains some example files and instructions for the OpenStudio 
 ## Getting Started
 - Test the bindings
 
-Start a terminal / command and try the following.  The output should be somehting similar.
-```
-$ irb
-> require 'openstudio'
-Loading OpenStudio ruby binaries from /Users/nlong/working/OpenStudio/build/OpenStudioCore-prefix/src/OpenStudioCore-build/Products/ruby/
-Loading OpenStudio shared libraries from /Users/nlong/working/OpenStudio/build/OpenStudioCore-prefix/src/OpenStudioCore-build/Products/
-OpenSSL loaded
-=> true
-```
+  Start a terminal / command and try the following.  The output should be somehting similar.  
+  ```
+  $ irb
+  > require 'openstudio'
+  Loading OpenStudio ruby binaries from   /Users/nlong/working/OpenStudio/build/OpenStudioCore-prefix/src/OpenStudioCore-build/Products/ruby/
+  Loading OpenStudio shared libraries from /Users/nlong/working/OpenStudio/build/OpenStudioCore-prefix/src/OpenStudioCore-build/Products/
+  OpenSSL loaded
+  => true
+  ```
  
 
 
