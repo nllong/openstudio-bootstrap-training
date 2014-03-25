@@ -15,8 +15,11 @@ end
 
 desc "Run all examples"
 task :run_all do
+  require 'parallel'
+
   files = Dir.glob("./**/ex*.rb").delete_if {|x| x =~ /.*solution.*/ }
-  files.each do |file|
+  #files.each do |file|
+  Parallel.each(files) do |file|
     currentdir = Dir.pwd
     logger.info "Changing to directory #{File.dirname(file)}"
     run_dir = Dir.chdir File.dirname(file)

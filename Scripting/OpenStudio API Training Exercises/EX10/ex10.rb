@@ -4,9 +4,9 @@ require 'openstudio'
 
 ## This file path assumes that you are in the EX10 folder when you execute Ruby.
 
-model_path = OpenStudio::Path.new('../PSZExample.osm')
+model_path = '../PSZExample.osm'
 
-if OpenStudio::exists(model_path)
+if File.exists?(model_path)
   version_translator = OpenStudio::OSVersion::VersionTranslator.new 
   model = version_translator.loadModel(model_path)
   if model.empty?
