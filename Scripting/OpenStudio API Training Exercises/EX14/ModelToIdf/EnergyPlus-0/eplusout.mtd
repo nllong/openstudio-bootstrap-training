@@ -1,0 +1,346 @@
+
+ Meters for 6,ZONE 1 LIGHTS FOR SPACE TYPE A:Lights Electric Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZONE 1 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZONE 1 [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 67,LIGHTS FOR SPACE TYPE A 1:Lights Electric Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZONE 2 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZONE 2 [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 88,LIGHTS FOR SPACE TYPE B 1:Lights Electric Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZONE 2 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZONE 2 [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 89,ZONE 1:Zone/Sys Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZONE 1 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZONE 1 [J]
+
+ Meters for 140,ZONE 1:Zone/Sys Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZONE 1 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZONE 1 [J]
+
+ Meters for 161,ZONE 2:Zone/Sys Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZONE 2 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZONE 2 [J]
+
+ Meters for 182,ZONE 2:Zone/Sys Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZONE 2 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZONE 2 [J]
+
+ Meters for 194,Whole Building:Total Electric Energy Purchased [J]
+  OnMeter=ElectricityPurchased:Facility [J]
+  OnMeter=ElectricityPurchased:Plant [J]
+  OnMeter=Cogeneration:ElectricityPurchased [J]
+
+ Meters for 225,Whole Building:Total Electric Energy Surplus [J]
+  OnMeter=ElectricitySurplusSold:Facility [J]
+  OnMeter=ElectricitySurplusSold:Plant [J]
+  OnMeter=Cogeneration:ElectricitySurplusSold [J]
+
+ Meters for 256,Whole Building:Net Electric Energy Purchased [J]
+  OnMeter=ElectricityNet:Facility [J]
+  OnMeter=ElectricityNet:Plant [J]
+  OnMeter=Cogeneration:ElectricityNet [J]
+
+ Meters for 287,COIL COOLING DX SINGLE SPEED 1:DX Coil Total Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=CoolingCoils:EnergyTransfer [J]
+
+ Meters for 308,COIL COOLING DX SINGLE SPEED 1:DX Cooling Coil Electric Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 329,COIL COOLING DX SINGLE SPEED 2:DX Coil Total Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=CoolingCoils:EnergyTransfer [J]
+
+ Meters for 330,COIL COOLING DX SINGLE SPEED 2:DX Cooling Coil Electric Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 331,COIL HEATING GAS 1:Heating Coil Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 342,COIL HEATING GAS 1:Heating Coil Gas Consumption [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 373,COIL HEATING GAS 1:Heating Coil Electric Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 384,COIL HEATING GAS 1:Heating Coil Parasitic Gas Consumption [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 385,COIL HEATING GAS 2:Heating Coil Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 386,COIL HEATING GAS 2:Heating Coil Gas Consumption [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 387,COIL HEATING GAS 2:Heating Coil Electric Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 388,COIL HEATING GAS 2:Heating Coil Parasitic Gas Consumption [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 389,FAN CONSTANT VOLUME 1:Fan Electric Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 410,FAN CONSTANT VOLUME 2:Fan Electric Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 411,COIL COOLING DX SINGLE SPEED 1:DX Cooling Coil Crankcase Heater Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 422,COIL COOLING DX SINGLE SPEED 2:DX Cooling Coil Crankcase Heater Consumption [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 423,Site:Carbon Equivalent Pollution From NOx [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 444,Site:Carbon Equivalent Pollution From CH4 [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 445,Site:Carbon Equivalent Pollution From CO2 [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ For Meter=Electricity:Facility [J], ResourceType=Electricity, contents are:
+  ZONE 1 LIGHTS FOR SPACE TYPE A:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE A 1:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE B 1:Lights Electric Consumption
+  COIL COOLING DX SINGLE SPEED 1:DX Cooling Coil Electric Consumption
+  COIL COOLING DX SINGLE SPEED 2:DX Cooling Coil Electric Consumption
+  COIL HEATING GAS 1:Heating Coil Electric Consumption
+  COIL HEATING GAS 2:Heating Coil Electric Consumption
+  FAN CONSTANT VOLUME 1:Fan Electric Consumption
+  FAN CONSTANT VOLUME 2:Fan Electric Consumption
+  COIL COOLING DX SINGLE SPEED 1:DX Cooling Coil Crankcase Heater Consumption
+  COIL COOLING DX SINGLE SPEED 2:DX Cooling Coil Crankcase Heater Consumption
+
+ For Meter=Electricity:Building [J], ResourceType=Electricity, Group=Building, contents are:
+  ZONE 1 LIGHTS FOR SPACE TYPE A:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE A 1:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE B 1:Lights Electric Consumption
+
+ For Meter=Electricity:Zone:ZONE 1 [J], ResourceType=Electricity, Group=Zone, contents are:
+  ZONE 1 LIGHTS FOR SPACE TYPE A:Lights Electric Consumption
+
+ For Meter=InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  ZONE 1 LIGHTS FOR SPACE TYPE A:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE A 1:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE B 1:Lights Electric Consumption
+
+ For Meter=InteriorLights:Electricity:Zone:ZONE 1 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ZONE 1 LIGHTS FOR SPACE TYPE A:Lights Electric Consumption
+
+ For Meter=General:InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  ZONE 1 LIGHTS FOR SPACE TYPE A:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE A 1:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE B 1:Lights Electric Consumption
+
+ For Meter=Electricity:Zone:ZONE 2 [J], ResourceType=Electricity, Group=Zone, contents are:
+  LIGHTS FOR SPACE TYPE A 1:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE B 1:Lights Electric Consumption
+
+ For Meter=InteriorLights:Electricity:Zone:ZONE 2 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  LIGHTS FOR SPACE TYPE A 1:Lights Electric Consumption
+  LIGHTS FOR SPACE TYPE B 1:Lights Electric Consumption
+
+ For Meter=EnergyTransfer:Facility [J], ResourceType=EnergyTransfer, contents are:
+  ZONE 1:Zone/Sys Sensible Heating Energy
+  ZONE 1:Zone/Sys Sensible Cooling Energy
+  ZONE 2:Zone/Sys Sensible Heating Energy
+  ZONE 2:Zone/Sys Sensible Cooling Energy
+  COIL COOLING DX SINGLE SPEED 1:DX Coil Total Cooling Energy
+  COIL COOLING DX SINGLE SPEED 2:DX Coil Total Cooling Energy
+  COIL HEATING GAS 1:Heating Coil Energy
+  COIL HEATING GAS 2:Heating Coil Energy
+
+ For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
+  ZONE 1:Zone/Sys Sensible Heating Energy
+  ZONE 1:Zone/Sys Sensible Cooling Energy
+  ZONE 2:Zone/Sys Sensible Heating Energy
+  ZONE 2:Zone/Sys Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZONE 1 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZONE 1:Zone/Sys Sensible Heating Energy
+  ZONE 1:Zone/Sys Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  ZONE 1:Zone/Sys Sensible Heating Energy
+  ZONE 2:Zone/Sys Sensible Heating Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZONE 1 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZONE 1:Zone/Sys Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  ZONE 1:Zone/Sys Sensible Cooling Energy
+  ZONE 2:Zone/Sys Sensible Cooling Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZONE 1 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZONE 1:Zone/Sys Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZONE 2 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZONE 2:Zone/Sys Sensible Heating Energy
+  ZONE 2:Zone/Sys Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZONE 2 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZONE 2:Zone/Sys Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZONE 2 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZONE 2:Zone/Sys Sensible Cooling Energy
+
+ For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
+  Whole Building:Total Electric Energy Purchased
+
+ For Meter=ElectricityPurchased:Plant [J], ResourceType=ElectricityPurchased, Group=Plant, contents are:
+  Whole Building:Total Electric Energy Purchased
+
+ For Meter=Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Total Electric Energy Purchased
+
+ For Meter=ElectricitySurplusSold:Facility [J], ResourceType=ElectricitySurplusSold, contents are:
+  Whole Building:Total Electric Energy Surplus
+
+ For Meter=ElectricitySurplusSold:Plant [J], ResourceType=ElectricitySurplusSold, Group=Plant, contents are:
+  Whole Building:Total Electric Energy Surplus
+
+ For Meter=Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Total Electric Energy Surplus
+
+ For Meter=ElectricityNet:Facility [J], ResourceType=ElectricityNet, contents are:
+  Whole Building:Net Electric Energy Purchased
+
+ For Meter=ElectricityNet:Plant [J], ResourceType=ElectricityNet, Group=Plant, contents are:
+  Whole Building:Net Electric Energy Purchased
+
+ For Meter=Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Net Electric Energy Purchased
+
+ For Meter=EnergyTransfer:HVAC [J], ResourceType=EnergyTransfer, Group=HVAC, contents are:
+  COIL COOLING DX SINGLE SPEED 1:DX Coil Total Cooling Energy
+  COIL COOLING DX SINGLE SPEED 2:DX Coil Total Cooling Energy
+  COIL HEATING GAS 1:Heating Coil Energy
+  COIL HEATING GAS 2:Heating Coil Energy
+
+ For Meter=CoolingCoils:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=CoolingCoils, contents are:
+  COIL COOLING DX SINGLE SPEED 1:DX Coil Total Cooling Energy
+  COIL COOLING DX SINGLE SPEED 2:DX Coil Total Cooling Energy
+
+ For Meter=Electricity:HVAC [J], ResourceType=Electricity, Group=HVAC, contents are:
+  COIL COOLING DX SINGLE SPEED 1:DX Cooling Coil Electric Consumption
+  COIL COOLING DX SINGLE SPEED 2:DX Cooling Coil Electric Consumption
+  COIL HEATING GAS 1:Heating Coil Electric Consumption
+  COIL HEATING GAS 2:Heating Coil Electric Consumption
+  FAN CONSTANT VOLUME 1:Fan Electric Consumption
+  FAN CONSTANT VOLUME 2:Fan Electric Consumption
+
+ For Meter=Cooling:Electricity [J], ResourceType=Electricity, EndUse=Cooling, contents are:
+  COIL COOLING DX SINGLE SPEED 1:DX Cooling Coil Electric Consumption
+  COIL COOLING DX SINGLE SPEED 2:DX Cooling Coil Electric Consumption
+  COIL COOLING DX SINGLE SPEED 1:DX Cooling Coil Crankcase Heater Consumption
+  COIL COOLING DX SINGLE SPEED 2:DX Cooling Coil Crankcase Heater Consumption
+
+ For Meter=HeatingCoils:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=HeatingCoils, contents are:
+  COIL HEATING GAS 1:Heating Coil Energy
+  COIL HEATING GAS 2:Heating Coil Energy
+
+ For Meter=Gas:Facility [J], ResourceType=Gas, contents are:
+  COIL HEATING GAS 1:Heating Coil Gas Consumption
+  COIL HEATING GAS 1:Heating Coil Parasitic Gas Consumption
+  COIL HEATING GAS 2:Heating Coil Gas Consumption
+  COIL HEATING GAS 2:Heating Coil Parasitic Gas Consumption
+
+ For Meter=Gas:HVAC [J], ResourceType=Gas, Group=HVAC, contents are:
+  COIL HEATING GAS 1:Heating Coil Gas Consumption
+  COIL HEATING GAS 1:Heating Coil Parasitic Gas Consumption
+  COIL HEATING GAS 2:Heating Coil Gas Consumption
+  COIL HEATING GAS 2:Heating Coil Parasitic Gas Consumption
+
+ For Meter=Heating:Gas [J], ResourceType=Gas, EndUse=Heating, contents are:
+  COIL HEATING GAS 1:Heating Coil Gas Consumption
+  COIL HEATING GAS 1:Heating Coil Parasitic Gas Consumption
+  COIL HEATING GAS 2:Heating Coil Gas Consumption
+  COIL HEATING GAS 2:Heating Coil Parasitic Gas Consumption
+
+ For Meter=Heating:Electricity [J], ResourceType=Electricity, EndUse=Heating, contents are:
+  COIL HEATING GAS 1:Heating Coil Electric Consumption
+  COIL HEATING GAS 2:Heating Coil Electric Consumption
+
+ For Meter=Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  FAN CONSTANT VOLUME 1:Fan Electric Consumption
+  FAN CONSTANT VOLUME 2:Fan Electric Consumption
+
+ For Meter=General:Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  FAN CONSTANT VOLUME 1:Fan Electric Consumption
+  FAN CONSTANT VOLUME 2:Fan Electric Consumption
+
+ For Meter=Electricity:Plant [J], ResourceType=Electricity, Group=Plant, contents are:
+  COIL COOLING DX SINGLE SPEED 1:DX Cooling Coil Crankcase Heater Consumption
+  COIL COOLING DX SINGLE SPEED 2:DX Cooling Coil Crankcase Heater Consumption
+
+ For Meter=Carbon Equivalent:Facility [kg], ResourceType=Carbon Equivalent, contents are:
+  Site:Carbon Equivalent Pollution From NOx
+  Site:Carbon Equivalent Pollution From CH4
+  Site:Carbon Equivalent Pollution From CO2
+
+ For Meter=CarbonEquivalentEmissions:Carbon Equivalent [kg], ResourceType=Carbon Equivalent, EndUse=CarbonEquivalentEmissions, contents are:
+  Site:Carbon Equivalent Pollution From NOx
+  Site:Carbon Equivalent Pollution From CH4
+  Site:Carbon Equivalent Pollution From CO2

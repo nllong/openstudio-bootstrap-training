@@ -1,0 +1,97 @@
+
+namespace :components do
+  require 'setup_component_types.rb'
+
+  desc "generate all component types listed in 'setup_component_types.rb'"
+  task :generate do
+    require 'rubygems'
+    #bcl gem source code:  https://cbr.nrel.gov/utilities/svn/Ruby/bcl  rake install
+    #bcl gem from https://rubygems.org/gems/bcl  gem install bcl
+    require 'bcl' 
+    require 'fileutils'
+    #read the component types from setup_components.rb  
+    component_types = component_types()             
+    #loop through the component types
+    component_types.each do |component_type|
+      puts "***********Generating BCL component files for: #{component_type}***********"
+      #get the component spreadsheet path
+      spdsht_path = "#{Dir.pwd}/#{component_type}/Components.xlsx"
+      #make sure a component spreadsheet exists at that path
+      if File.exist?(spdsht_path) == false
+        puts "No 'Components.xlsx' spreadsheet exists for #{component_type}" 
+        next
+      end
+      puts "Reading #{spdsht_path}"
+      #read in the spreadsheet, making a component of each row
+      #materials are a special case, where there are multiple tabs with components
+      components = BCL::ComponentSpreadsheet.new(spdsht_path, component_type)     
+      # save components
+      components.save("#{Dir.pwd}/#{component_type}", 1000, true)
+      puts ""
+    end
+  end #end the rake run task
+  
+  desc "push all component types listed in 'setup_component_types.rb' to BCL"
+  task :push do
+    require 'rubygems'
+    #bcl gem source code:  https://cbr.nrel.gov/utilities/svn/Ruby/bcl  rake install
+    #bcl gem from https://rubygems.org/gems/bcl  gem install bcl
+    require 'bcl' 
+    cm = BCL::ComponentMethods.new
+    #login to the BCL
+    cm.login()  #uses credentials from config.yml file
+    #read the component types from setup_components.rb  
+    component_types = component_types()             
+    #loop through the component types
+    component_types.each do |component_type|
+      puts "***********Pushing component files to BCL for: #{component_type}***********"
+      #get all the files
+      files = Pathname.glob("#{Dir.pwd}/#{component_type}/components/**/*.tar.gz")
+      puts "Getting ready to push #{files.count} files"
+      log = cm.push_contents(files, true, 'nrel_component')
+      puts ""
+    end
+  end #end the rake push task
+  
+  desc "update all component types listed in 'setup_component_types.rb' on BCL"
+  task :update do
+    require 'rubygems'
+    #bcl gem source code:  https://cbr.nrel.gov/utilities/svn/Ruby/bcl  rake install
+    #bcl gem from https://rubygems.org/gems/bcl  gem install bcl
+    require 'bcl' 
+    cm = BCL::ComponentMethods.new
+    #login to the BCL
+    cm.login()  #uses credentials from config.yml file
+    #read the component types from setup_components.rb  
+    component_types = component_types()             
+    #loop through the component types
+    component_types.each do |component_type|
+      puts "***********Pushing component files to BCL for: #{component_type}***********"
+      #get all the files
+      files = Pathname.glob("#{Dir.pwd}/#{component_type}/components/**/*.tar.gz")
+      puts "Getting ready to push #{files.count} files"
+      log = cm.update_contents(files, true)
+      puts ""
+     end
+  end #end the :update rake task 
+  
+  desc "delete receipt files for all component types listed in 'setup_component_types.rb'"
+  task :delete_receipts do
+    require 'rubygems'
+    #bcl gem source code:  https://cbr.nrel.gov/utilities/svn/Ruby/bcl  rake install
+    #bcl gem from https://rubygems.org/gems/bcl  gem install bcl
+    require 'bcl' 
+    cm = BCL::ComponentMethods.new
+    #read the component types from setup_components.rb  
+    component_types = component_types()             
+    #loop through the component types
+    component_types.each do |component_type|
+      puts "***********Deleting receipt files for: #{component_type}***********"
+      #get all the receipt files
+      files = Pathname.glob("#{Dir.pwd}/#{component_type}/components/**/*.tar.gz")
+      log = cm.delete_receipts(files)
+      puts ""
+    end
+  end #end the :delete_receipts rake task
+  
+end #end the :components namespace

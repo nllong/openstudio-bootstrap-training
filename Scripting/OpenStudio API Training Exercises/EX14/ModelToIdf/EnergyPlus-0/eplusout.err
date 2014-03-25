@@ -1,0 +1,77 @@
+Program Version,EnergyPlus-Windows-OMP-64 7.2.0.006, YMD=2013.07.27 09:48,IDD_Version 7.2.0.006
+   ** Warning ** IP: Note -- Some missing fields have been filled with defaults. See the audit output file for details.
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** GetSurfaces: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
+   **   ~~~   ** Found first in surface=SURFACE 1
+   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
+   ** Warning ** GetSurfaceData: There are 2 coincident/collinear vertices; These have been deleted unless the deletion would bring the number of surface sides < 3.
+   **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** CheckUsedConstructions: There are 1 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ************* Beginning System Sizing Calculations
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** Coil:Cooling:DX:SingleSpeed "COIL COOLING DX SINGLE SPEED 1" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = -3.00 C.
+   **   ~~~   **  ...Occurrence info = RUN PERIOD 1, 01/11 20:10 - 20:13
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.509 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** Coil:Cooling:DX:SingleSpeed "COIL COOLING DX SINGLE SPEED 2" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = -2.51 C.
+   **   ~~~   **  ...Occurrence info = RUN PERIOD 1, 01/11 20:10 - 20:13
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 16.177 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** Coil:Cooling:DX:SingleSpeed "COIL COOLING DX SINGLE SPEED 1" - Air-cooled condenser inlet dry-bulb temperature below 0 C. Outdoor dry-bulb temperature = -1.50
+   **   ~~~   **  ... Occurrence info = RUN PERIOD 1, 02/13 20:10 - 20:13
+   **   ~~~   ** ... Operation at low ambient temperatures may require special performance curves.
+   ** Warning ** Coil:Cooling:DX:SingleSpeed "COIL COOLING DX SINGLE SPEED 2" - Air-cooled condenser inlet dry-bulb temperature below 0 C. Outdoor dry-bulb temperature = -1.50
+   **   ~~~   **  ... Occurrence info = RUN PERIOD 1, 02/13 20:10 - 20:13
+   **   ~~~   ** ... Operation at low ambient temperatures may require special performance curves.
+   ************* Simulation Error Summary *************
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** Coil:Cooling:DX:SingleSpeed "COIL COOLING DX SINGLE SPEED 1" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 134 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.830071  Min=-5.325036
+   *************
+   *************  ** Warning ** Coil:Cooling:DX:SingleSpeed "COIL COOLING DX SINGLE SPEED 2" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 137 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.936043  Min=-4.549917
+   *************
+   *************  ** Warning ** Coil:Cooling:DX:SingleSpeed "COIL COOLING DX SINGLE SPEED 1" - Low condenser dry-bulb temperature error continues...
+   *************  **   ~~~   **   This error occurred 9 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=-0.6 [C]  Min=-2.2 [C]
+   *************
+   *************  ** Warning ** Coil:Cooling:DX:SingleSpeed "COIL COOLING DX SINGLE SPEED 2" - Low condenser dry-bulb temperature error continues...
+   *************  **   ~~~   **   This error occurred 9 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=-0.6 [C]  Min=-2.2 [C]
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 2 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 294 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 18.13sec

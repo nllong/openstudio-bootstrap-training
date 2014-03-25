@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+  <name>TEST MATERIAL FOR TRAINING</name>
+  <uid>728062c0-db85-0130-1d7b-0026b9d40ccf</uid>
+  <version_id>7282c420-db85-0130-1d7d-0026b9d40ccf</version_id>
+  <description>TEST MATERIAL FOR TRAINING</description>
+  <provenances>
+    <provenance>
+      <author>aparker</author>
+      <datetime>2012/09/26 21:59:16</datetime>
+      <comment>TEST MATERIAL FOR TRAINING</comment>
+    </provenance>
+  </provenances>
+  <tags>
+    <tag>Material.Opaque.Building Board and Siding</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Category</name>
+      <value>Asbestos Cement Board</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Thickness</name>
+      <value>3.175</value>
+      <datatype>float</datatype>
+      <units>mm</units>
+    </attribute>
+    <attribute>
+      <name>Conductivity</name>
+      <value>0.58</value>
+      <datatype>float</datatype>
+      <units>W/m*K</units>
+    </attribute>
+    <attribute>
+      <name>Resistance</name>
+      <value>0.00547413793103448</value>
+      <datatype>float</datatype>
+      <units>m^2*K/W</units>
+    </attribute>
+    <attribute>
+      <name>Fensity</name>
+      <value>1900.0</value>
+      <datatype>float</datatype>
+      <units>kg/m^3</units>
+    </attribute>
+    <attribute>
+      <name>Specific Heat</name>
+      <value>1000.0</value>
+      <datatype>float</datatype>
+      <units>J/kg*K</units>
+    </attribute>
+    <attribute>
+      <name>Typical Application</name>
+      <value>Exterior Wall</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>OpenStudio Type</name>
+      <value>OS:Material</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <source>
+  </source>
+  <files>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>0.7.0</identifier>
+      </version>
+      <filename>test_material.osm</filename>
+      <filetype>osm</filetype>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>0.7.0</identifier>
+      </version>
+      <filename>test_material.osc</filename>
+      <filetype>osc</filetype>
+    </file>
+    <file>
+      <version>
+        <software_program>EnergyPlus</software_program>
+        <identifier>7.0.0.036</identifier>
+      </version>
+      <filename>test_material.idf</filename>
+      <filetype>idf</filetype>
+    </file>
+  </files>
+  <costs>
+  </costs>
+</component>

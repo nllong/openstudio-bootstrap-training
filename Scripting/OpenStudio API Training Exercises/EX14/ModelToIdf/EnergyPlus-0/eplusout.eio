@@ -1,0 +1,190 @@
+Program Version,EnergyPlus-Windows-OMP-64 7.2.0.006, YMD=2013.07.27 09:48
+! <Version>, Version ID
+ Version, 7.2
+! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
+ Timesteps per Hour,  6, 10
+! <System Convergence Limits>, Minimum System TimeStep {minutes}, Max HVAC Iterations,  Minimum Plant Iterations, Maximum Plant Iterations
+ System Convergence Limits, 1, 20, 2, 8
+! <Simulation Control>, Do Zone Sizing, Do System Sizing, Do Plant Sizing, Do Design Days, Do Weather Simulation
+ Simulation Control, Yes, Yes, No, Yes, Yes
+! <Output Reporting Tolerances>, Tolerance for Time Heating Setpoint Not Met, Tolerance for Time Cooling Setpoint Not Met
+ Output Reporting Tolerances, 0.200, 0.200, 
+! <Site:GroundTemperature:BuildingSurface>, Months From Jan to Dec {Deg C}
+ Site:GroundTemperature:BuildingSurface,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00
+! <Site:GroundTemperature:FCfactorMethod>, Months From Jan to Dec {Deg C}
+ Site:GroundTemperature:FCfactorMethod,  -1.89,  -3.06,  -0.99,   2.23,  10.68,  17.20,  21.60,  22.94,  20.66,  15.60,   8.83,   2.56
+! <Site:GroundTemperature:Shallow>, Months From Jan to Dec {Deg C}
+ Site:GroundTemperature:Shallow,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00
+! <Site:GroundTemperature:Deep>, Months From Jan to Dec {Deg C}
+ Site:GroundTemperature:Deep,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00
+! <Site:GroundReflectance>, Months From Jan to Dec {dimensionless}
+ Site:GroundReflectance,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:SnowModifier>, Normal, Daylighting {dimensionless}
+ Site:GroundReflectance:SnowModifier,   1.000,   1.000
+! <Site:GroundReflectance:Snow>, Months From Jan to Dec {dimensionless}
+ Site:GroundReflectance:Snow,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:Snow:Daylighting>, Months From Jan to Dec {dimensionless}
+ Site:GroundReflectance:Snow:Daylighting,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Environment:Weather Station>,Wind Sensor Height Above Ground {m},Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Sensor Height Above Ground {m},Wind Speed Modifier Coefficient [Internal],Temperature Modifier Coefficient [Internal]
+Environment:Weather Station,10.000,0.140,270.000,1.500,1.586,9.750E-003
+! <Site:Location>, Location Name, Latitude {N+/S- Deg}, Longitude {E+/W- Deg},  Time Zone Number {GMT+/-}, Elevation {m},  Standard Pressure at Elevation {Pa}, Standard RhoAir at Elevation
+Site:Location,Chicago Ohare Intl Ap IL USA TMY3 WMO#=725300,41.98,-87.92,-6.00,201.00,98934,1.1759
+! <Building Information>, Building Name,North Axis {deg},Terrain,  Loads Convergence Tolerance Value,Temperature Convergence Tolerance Value,  Solar Distribution,Maximum Number of Warmup Days,Minimum Number of Warmup Days
+ Building Information,Building 1,0.000,Suburbs,4.00000E-002,0.40000,FullExterior,25,6
+! <Inside Convection Algorithm>, Algorithm {Simple | TARP | CeilingDiffuser | AdaptiveConvectionAlgorithm}
+Inside Convection Algorithm,TARP
+! <Outside Convection Algorithm>, Algorithm {SimpleCombined | TARP | MoWitt | DOE-2 | AdaptiveConvectionAlgorithm}
+Outside Convection Algorithm,DOE-2
+! <Sky Radiance Distribution>, Value {Anisotropic}
+Sky Radiance Distribution,Anisotropic
+! <Zone Air Solution Algorithm>, Value {ThirdOrderBackwardDifference | AnalyticalSolution | EulerMethod}
+ Zone Air Solution Algorithm, AnalyticalSolution
+! <Zone Air Contaminant Balance Simulation>, Simulation {Yes/No}, Carbon Dioxide Concentration
+ Zone Air Carbon Dioxide Balance Simulation, No,N/A
+! <Zone Air Contaminant Balance Simulation>, Simulation {Yes/No}, Generic Contaminant Concentration
+ Zone Air Generic Contaminant Balance Simulation, No,N/A
+! <Environment:Site Atmospheric Variation>,Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Gradient Coefficient {K/m}
+Environment:Site Atmospheric Variation,0.220,370.000,6.500000E-003
+! <SurfaceGeometry>,Starting Corner,Vertex Input Direction,Coordinate System,Daylight Reference Point Coordinate System,Rectangular (Simple) Surface Coordinate System
+ Surface Geometry,UpperLeftCorner,Counterclockwise,RelativeCoordinateSystem,RelativeCoordinateSystem,RelativeToZoneOrigin
+! <Surface Heat Transfer Algorithm>, Value {CTF - ConductionTransferFunction | EMPD - MoisturePenetrationDepthConductionTransferFunction | CondFD - ConductionFiniteDifference | HAMT - CombinedHeatAndMoistureFiniteElement} - Description,Inside Surface Max Temperature Limit{C}, Surface Convection Coefficient Lower Limit {W/m2-K}, Surface Convection Coefficient Upper Limit {W/m2-K}
+Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,200,0.10,1000.0
+! <Shading Summary>, Number of Fixed Detached Shades, Number of Building Detached Shades, Number of Attached Shades
+ Shading Summary,0,0,0
+! <Zone Summary>, Number of Zones, Number of Zone Surfaces, Number of SubSurfaces
+ Zone Summary,2,18,0
+! <Zone Information>,Zone Name,North Axis {deg},Origin X-Coordinate {m},Origin Y-Coordinate {m},Origin Z-Coordinate {m},Centroid X-Coordinate {m},Centroid Y-Coordinate {m},Centroid Z-Coordinate {m},Type,Zone Multiplier,Zone List Multiplier,Minimum X {m},Maximum X {m},Minimum Y {m},Maximum Y {m},Minimum Z {m},Maximum Z {m},Ceiling Height {m},Volume {m3},Zone Inside Convection Algorithm {Simple-Detailed-CeilingDiffuser-TrombeWall},Zone Outside Convection Algorithm {Simple-Detailed-Tarp-MoWitt-DOE-2-BLAST}, Floor Area {m2},Exterior Gross Wall Area {m2},Exterior Net Wall Area {m2},Exterior Window Area {m2}, Number of Surfaces, Number of SubSurfaces, Number of Shading SubSurfaces,  Part of Total Building Area
+ Zone Information, ZONE 1,0.0,0.00,0.00,0.00,10.00,10.00,2.50,1,1,1,0.00,20.00,0.00,20.00,0.00,5.00,5.00,2000.00,TARP,DOE-2,400.00,300.00,300.00,0.00,7,0,0,Yes
+ Zone Information, ZONE 2,0.0,0.00,0.00,0.00,25.00,10.00,2.50,1,1,1,20.00,30.00,0.00,20.00,0.00,5.00,5.00,1000.00,TARP,DOE-2,200.00,200.00,200.00,0.00,10,0,0,Yes
+! <Zone Internal Gains/Equipment Information - Nominal>,Zone Name, Floor Area {m2},# Occupants,Area per Occupant {m2/person},Occupant per Area {person/m2},Interior Lighting {W/m2},Electric Load {W/m2},Gas Load {W/m2},Other Load {W/m2},Hot Water Eq {W/m2},Steam Equipment {W/m2},Sum Loads per Area {W/m2},Outdoor Controlled Baseboard Heat
+ Zone Internal Gains, ZONE 1,400.00,21.5,18.580,5.382E-002,11.000,0.000,0.000,0.000,0.000,0.000,11.000,No
+ Zone Internal Gains, ZONE 2,200.00,10.8,18.580,5.382E-002,16.500,0.000,0.000,0.000,0.000,0.000,16.500,No
+! <People Internal Gains - Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Number of People {},People/Floor Area {person/m2},Floor Area per person {m2/person},Fraction Radiant,Fraction Convected,Sensible Fraction Calculation,Activity level,ASHRAE 55 Warnings,Carbon Dioxide Generation Rate 
+ People Internal Gains, ZONE 1 PEOPLE FOR SPACE TYPE A,OCCUPANCY SCHEDULE,ZONE 1,400.00,21.5,21.5,5.382E-002,18.580,0.300,0.700,0.100,PEOPLE ACTIVITY SCHEDULE,No,3.8200E-008
+ People Internal Gains, PEOPLE FOR SPACE TYPE A 1,OCCUPANCY SCHEDULE,ZONE 2,200.00,10.8,5.4,2.691E-002,37.161,0.300,0.700,0.100,PEOPLE ACTIVITY SCHEDULE,No,3.8200E-008
+ People Internal Gains, PEOPLE FOR SPACE TYPE B 1,OCCUPANCY SCHEDULE,ZONE 2,200.00,10.8,5.4,2.691E-002,37.161,0.300,0.700,0.100,PEOPLE ACTIVITY SCHEDULE,No,3.8200E-008
+! <Lights Internal Gains - Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Lighting Level {W},Lights/Floor Area {W/m2},Lights per person {W/person},Fraction Return Air,Fraction Radiant,Fraction Short Wave,Fraction Convected,Fraction Replaceable,EndUse Category
+ Lights Internal Gains, ZONE 1 LIGHTS FOR SPACE TYPE A,LIGHTING SCHEDULE,ZONE 1,400.00,21.5,4400.000,11.000,204.385,0.000,0.300,0.200,0.500,1.000,General
+ Lights Internal Gains, LIGHTS FOR SPACE TYPE A 1,LIGHTING SCHEDULE,ZONE 2,200.00,10.8,1100.000,5.500,102.192,0.000,0.300,0.200,0.500,1.000,General
+ Lights Internal Gains, LIGHTS FOR SPACE TYPE B 1,LIGHTING SCHEDULE,ZONE 2,200.00,10.8,2200.000,11.000,204.385,0.000,0.300,0.200,0.500,1.000,General
+! <Shadowing/Sun Position Calculations> [Annual Simulations], Value {days}, Allowable Number Figures in Shadow Overlap {}, Polygon Clipping Algorithm, Sky Diffuse Modeling Algorithm
+Shadowing/Sun Position Calculations,7,15000,SutherlandHodgman,SimpleSkyDiffuseModeling
+! <RoomAir Model>, Zone Name, Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
+RoomAir Model,ZONE 1,Mixing/Well-Stirred
+RoomAir Model,ZONE 2,Mixing/Well-Stirred
+! <AirflowNetwork Model:Control>, No Multizone or Distribution/Multizone with Distribution/Multizone without Distribution/Multizone with Distribution only during Fan Operation
+AirflowNetwork Model:Control,NoMultizoneOrDistribution
+! <Zone Volume Capacitance Multiplier>, Sensible Heat Capacity Multiplier, Moisture Capacity Multiplier, Carbon Dioxide Capacity Multiplier, Generic Contaminant Capacity Multiplier
+Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
+! <Load Timesteps in Zone Design Calculation Averaging Window>, Value
+ Load Timesteps in Zone Design Calculation Averaging Window,    6
+! <Heating Sizing Factor Information>, Sizing Factor ID, Value
+ Heating Sizing Factor Information, Global,   1.2500    
+ Heating Sizing Factor Information, Zone ZONE 1,   1.2500    
+ Heating Sizing Factor Information, Zone ZONE 2,   1.2500    
+! <Cooling Sizing Factor Information>, Sizing Factor ID, Value
+ Cooling Sizing Factor Information, Global,   1.1500    
+ Cooling Sizing Factor Information, Zone ZONE 1,   1.1500    
+ Cooling Sizing Factor Information, Zone ZONE 2,   1.1500    
+! <Zone Sizing Information>, Zone Name, Load Type, Calc Des Load {W}, User Des Load {W}, Calc Des Air Flow Rate {m3/s}, User Des Air Flow Rate {m3/s}, Design Day Name, Date/Time of Peak, Temperature at Peak {C}, Humidity Ratio at Peak {kgWater/kgDryAir}, Floor Area {m2}, # Occupants, Calc Outdoor Air Flow Rate {m3/s}
+ Zone Sizing Information, ZONE 1, Cooling, 5719.31000, 6577.20650, 0.48200, 0.55430, CHICAGO OHARE INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 16:10:00, 32.53000, 1.49611E-002, 400.00000, 21.52800, 0.23175
+ Zone Sizing Information, ZONE 1, Heating, 16532.35972, 20665.44965, 0.71821, 0.89776, CHICAGO OHARE INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -20.00000, 6.49857E-004, 400.00000, 21.52800, 0.23175
+ Zone Sizing Information, ZONE 2, Cooling, 4206.74669, 4837.75869, 0.35452, 0.40770, CHICAGO OHARE INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 15:40:00, 32.88000, 1.49611E-002, 200.00000, 10.76400, 0.11587
+ Zone Sizing Information, ZONE 2, Heating, 9883.76155, 12354.70194, 0.43038, 0.53798, CHICAGO OHARE INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -20.00000, 6.49857E-004, 200.00000, 10.76400, 0.11587
+! <System Sizing Information>, System Name, Field Description, Value
+ System Sizing Information, PACKAGED ROOFTOP AIR CONDITIONER, Calculated Cooling Design Air Flow Rate [m3/s], 0.55430
+ System Sizing Information, PACKAGED ROOFTOP AIR CONDITIONER, User Cooling Design Air Flow Rate [m3/s], 0.55430
+ System Sizing Information, PACKAGED ROOFTOP AIR CONDITIONER, Calculated Heating Design Air Flow Rate [m3/s], 0.89776
+ System Sizing Information, PACKAGED ROOFTOP AIR CONDITIONER, User Heating Design Air Flow Rate [m3/s], 0.89776
+ System Sizing Information, PACKAGED ROOFTOP AIR CONDITIONER 1, Calculated Cooling Design Air Flow Rate [m3/s], 0.40770
+ System Sizing Information, PACKAGED ROOFTOP AIR CONDITIONER 1, User Cooling Design Air Flow Rate [m3/s], 0.40770
+ System Sizing Information, PACKAGED ROOFTOP AIR CONDITIONER 1, Calculated Heating Design Air Flow Rate [m3/s], 0.53798
+ System Sizing Information, PACKAGED ROOFTOP AIR CONDITIONER 1, User Heating Design Air Flow Rate [m3/s], 0.53798
+! <Component Sizing Information>, Component Type, Component Name, Input Field Description, Value
+ Component Sizing Information, AirTerminal:SingleDuct:Uncontrolled, AIR TERMINAL SINGLE DUCT UNCONTROLLED 2, Maximum Air Flow Rate [m3/s], 0.89776
+ Component Sizing Information, AirTerminal:SingleDuct:Uncontrolled, AIR TERMINAL SINGLE DUCT UNCONTROLLED 3, Maximum Air Flow Rate [m3/s], 0.53798
+ Component Sizing Information, Branch, BRANCH {AA4DFFB5-BD80-46B0-B8DC-D860E0E20E61}, Maximum Flow Rate [m3/s], 0.89776
+ Component Sizing Information, AirLoopHVAC, PACKAGED ROOFTOP AIR CONDITIONER, Design Supply Air Flow Rate [m3/s], 0.89776
+ Component Sizing Information, Branch, BRANCH {1C4D4D4A-44FE-4BD1-AF33-BEE183921FD1}, Maximum Flow Rate [m3/s], 0.53798
+ Component Sizing Information, AirLoopHVAC, PACKAGED ROOFTOP AIR CONDITIONER 1, Design Supply Air Flow Rate [m3/s], 0.53798
+ Component Sizing Information, Controller:OutdoorAir, CONTROLLER OUTDOOR AIR 1, Maximum Outdoor Air Flow Rate [m3/s], 0.89776
+ Component Sizing Information, Controller:OutdoorAir, CONTROLLER OUTDOOR AIR 1, Minimum Outdoor Air Flow Rate [m3/s], 0.23175
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, COIL COOLING DX SINGLE SPEED 1, Rated Air Flow Rate [m3/s], 0.89776
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, COIL COOLING DX SINGLE SPEED 1, Rated Total Cooling Capacity (gross) [W], 22293.55622
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, COIL COOLING DX SINGLE SPEED 1, Rated Sensible Heat Ratio, 0.67608
+! <DX Cooling Coil Standard Rating Information>, Component Type, Component Name, Standard Rating (Net) Cooling Capacity {W}, Standard Rated Net COP {W/W}, EER {Btu/W-h}, SEER {Btu/W-h}, IEER {Btu/W-h}
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, COIL COOLING DX SINGLE SPEED 1, 21655.5, 2.68, 9.16, 9.25, 9.51
+ Component Sizing Information, Coil:Heating:Gas, COIL HEATING GAS 1, Nominal Capacity [W], 63647.58244
+ Component Sizing Information, Fan:ConstantVolume, FAN CONSTANT VOLUME 1, Maximum Flow Rate [m3/s], 0.89776
+ Component Sizing Information, Controller:OutdoorAir, CONTROLLER OUTDOOR AIR 2, Maximum Outdoor Air Flow Rate [m3/s], 0.53798
+ Component Sizing Information, Controller:OutdoorAir, CONTROLLER OUTDOOR AIR 2, Minimum Outdoor Air Flow Rate [m3/s], 0.11587
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, COIL COOLING DX SINGLE SPEED 2, Rated Air Flow Rate [m3/s], 0.53798
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, COIL COOLING DX SINGLE SPEED 2, Rated Total Cooling Capacity (gross) [W], 13359.32016
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, COIL COOLING DX SINGLE SPEED 2, Rated Sensible Heat Ratio, 0.67608
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, COIL COOLING DX SINGLE SPEED 2, 12976.9, 2.68, 9.16, 9.25, 9.51
+ Component Sizing Information, Coil:Heating:Gas, COIL HEATING GAS 2, Nominal Capacity [W], 38140.54711
+ Component Sizing Information, Fan:ConstantVolume, FAN CONSTANT VOLUME 2, Maximum Flow Rate [m3/s], 0.53798
+! <Environment>,Environment Name,Environment Type, Start Date, End Date, Start DayOfWeek, Duration {#days}, Source:Start DayOfWeek,  Use Daylight Saving, Use Holidays, Apply Weekend Holiday Rule,  Use Rain Values, Use Snow Values
+! <Environment:Special Days>, Special Day Name, Special Day Type, Source, Start Date, Duration {#days}
+! <Environment:Daylight Saving>, Daylight Saving Indicator, Source, Start Date, End Date
+! <Environment:WarmupDays>, NumberofWarmupDays
+Environment,CHICAGO OHARE INTL AP ANN CLG .4% CONDNS DB=>MWB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+! <Environment:Design Day Data>, Max Dry-Bulb Temp {C}, Temp Range {dC}, Temp Range Ind Type, Hum Ind Value at Max Temp, Hum Ind Type,Pressure {Pa}, Wind Direction {deg CW from N}, Wind Speed {m/s}, Clearness, Rain, Snow
+! <Environment:Design_Day_Misc>,DayOfYear,ASHRAE A Coeff,ASHRAE B Coeff,ASHRAE C Coeff,Solar Constant-Annual Variation,Eq of Time {minutes}, Solar Declination Angle {deg}, Solar Model
+Environment:Design Day Data,33.30,10.50,DefaultMultipliers,98934,230,5.2,0.00,No ,No 
+Environment:Design_Day_Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
+ Warmup Convergence Information,ZONE 1,SizingPeriod: CHICAGO OHARE INTL AP ANN CLG .4% CONDNS DB=>MWB,3.2820435807E-002,0.1259603418,Pass,Pass,0.2057509760,0.7420260623,Pass,Pass
+ Warmup Convergence Information,ZONE 2,SizingPeriod: CHICAGO OHARE INTL AP ANN CLG .4% CONDNS DB=>MWB,3.4044641024E-002,0.1426043235,Pass,Pass,8.7129597331E-002,0.3424330041,Pass,Pass
+Environment,CHICAGO OHARE INTL AP ANN CLG .4% CONDNS DP=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,28.90,10.50,DefaultMultipliers,98934,230,5.2,0.00,No ,No 
+Environment:Design_Day_Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  8
+ Warmup Convergence Information,ZONE 1,SizingPeriod: CHICAGO OHARE INTL AP ANN CLG .4% CONDNS DP=>MDB,1.7957122442E-002,3.3535118490E-002,Pass,Pass,0.4102850081,2.3142237679,Pass,Pass
+ Warmup Convergence Information,ZONE 2,SizingPeriod: CHICAGO OHARE INTL AP ANN CLG .4% CONDNS DP=>MDB,1.6516730510E-002,4.0249992946E-002,Pass,Pass,0.9069055375,5.9252440315,Pass,Pass
+Environment,CHICAGO OHARE INTL AP ANN CLG .4% CONDNS ENTH=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,31.40,10.50,DefaultMultipliers,98934,230,5.2,0.00,No ,No 
+Environment:Design_Day_Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE 1,SizingPeriod: CHICAGO OHARE INTL AP ANN CLG .4% CONDNS ENTH=>MDB,2.4164265324E-002,7.7045612482E-002,Pass,Pass,0.1266816123,0.3584827517,Pass,Pass
+ Warmup Convergence Information,ZONE 2,SizingPeriod: CHICAGO OHARE INTL AP ANN CLG .4% CONDNS ENTH=>MDB,2.6241272382E-002,9.7724224820E-002,Pass,Pass,0.1601843400,0.5944908999,Pass,Pass
+Environment,CHICAGO OHARE INTL AP ANN CLG .4% CONDNS WB=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,31.20,10.50,DefaultMultipliers,98934,230,5.2,0.00,No ,No 
+Environment:Design_Day_Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE 1,SizingPeriod: CHICAGO OHARE INTL AP ANN CLG .4% CONDNS WB=>MDB,2.2873809990E-002,6.9633007677E-002,Pass,Pass,0.1197556844,0.3399383219,Pass,Pass
+ Warmup Convergence Information,ZONE 2,SizingPeriod: CHICAGO OHARE INTL AP ANN CLG .4% CONDNS WB=>MDB,2.5089074994E-002,9.0102721597E-002,Pass,Pass,0.1807189670,0.7551860643,Pass,Pass
+Environment,CHICAGO OHARE INTL AP ANN HTG 99.6% CONDNS DB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-20.00,0.00,DefaultMultipliers,98934,270,4.9,0.00,No ,No 
+Environment:Design_Day_Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE 1,SizingPeriod: CHICAGO OHARE INTL AP ANN HTG 99.6% CONDNS DB,3.8654563351E-002,0.2820130497,Pass,Pass,2.2409716794E-002,0.1237879920,Pass,Pass
+ Warmup Convergence Information,ZONE 2,SizingPeriod: CHICAGO OHARE INTL AP ANN HTG 99.6% CONDNS DB,3.8650448526E-002,0.2882788128,Pass,Pass,2.5462796307E-002,0.1385033504,Pass,Pass
+Environment,CHICAGO OHARE INTL AP ANN HTG WIND 99.6% CONDNS WS=>MCDB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-3.50,0.00,DefaultMultipliers,98934,270,12.4,0.00,No ,No 
+Environment:Design_Day_Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE 1,SizingPeriod: CHICAGO OHARE INTL AP ANN HTG WIND 99.6% CONDNS WS=>MCDB,3.8638535427E-002,0.2712277031,Pass,Pass,5.7926977768E-002,0.3234897739,Pass,Pass
+ Warmup Convergence Information,ZONE 2,SizingPeriod: CHICAGO OHARE INTL AP ANN HTG WIND 99.6% CONDNS WS=>MCDB,3.8635742473E-002,0.2741967863,Pass,Pass,6.4955108741E-002,0.3704359861,Pass,Pass
+Environment,CHICAGO OHARE INTL AP ANN HUM_N 99.6% CONDNS DP=>MCDB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-19.20,0.00,DefaultMultipliers,98934,270,4.9,0.00,No ,No 
+Environment:Design_Day_Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE 1,SizingPeriod: CHICAGO OHARE INTL AP ANN HUM_N 99.6% CONDNS DP=>MCDB,3.8654062033E-002,0.2816559978,Pass,Pass,2.2778497095E-002,0.1264657620,Pass,Pass
+ Warmup Convergence Information,ZONE 2,SizingPeriod: CHICAGO OHARE INTL AP ANN HUM_N 99.6% CONDNS DP=>MCDB,3.8649979674E-002,0.2877487864,Pass,Pass,2.5911191008E-002,0.1417666409,Pass,Pass
+Environment,RUN PERIOD 1,WeatherFileRunPeriod,01/01,12/31,Thursday,365,Use RunPeriod Specified Day,No ,No ,No ,Yes,Yes
+Environment:Daylight Saving,No,RunPeriod Object
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE 1,RunPeriod: RUN PERIOD 1,3.8638710879E-002,0.2685688862,Pass,Pass,0.1026186619,0.6988564826,Pass,Pass
+ Warmup Convergence Information,ZONE 2,RunPeriod: RUN PERIOD 1,3.8635163990E-002,0.2707139320,Pass,Pass,0.2766277811,2.6436153895,Pass,Pass
+! <Program Control Information:Threads/Parallel Sims>, Threading Supported,Maximum Number of Threads, Env Set Threads (OMP_NUM_THREADS), EP Env Set Threads (EP_OMP_NUM_THREADS), IDF Set Threads, Number of Threads Used (Interior Radiant Exchange), Number Nominal Surfaces, Number Parallel Sims
+Program Control:Threads/Parallel Sims, Yes,8, Not Set, Not Set, 1, 1, 18, N/A
+End of Data
