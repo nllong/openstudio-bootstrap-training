@@ -3,13 +3,13 @@ require 'openstudio'
 # Setup model and output paths relative to this script
 
 # TODO Fixup these paths
-model_path = OpenStudio::Path.new('Path/To/OSTraining/PSZExample.osm')
-output_path = OpenStudio::Path.new('Path/To/OSTraining/EX12/')
+model_path = OpenStudio::Path.new('../PSZExample.osm')
+output_path = OpenStudio::Path.new('../EX12/')
 
 # Find weather file
 
 # TODO Fixup this path
-epw_path = OpenStudio::Path.new("Path/To/OSTraining/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.epw")
+epw_path = OpenStudio::Path.new("../USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.epw")
 
 # Note that this example already has design days imported, so you can skip the ddy file import.
 

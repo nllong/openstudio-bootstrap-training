@@ -1,7 +1,7 @@
 require 'openstudio'
 
 #specify the .osm to open 
-model_path = OpenStudio::Path.new('C:/OSTraining/EX3/ex3_solution.osm')
+model_path = OpenStudio::Path.new('../EX3/ex3_solution.osm')
 
 #load the model, version translating if necessary
 if OpenStudio::exists(model_path)
@@ -96,7 +96,7 @@ if model.getSpaceByName("Space 3")
 end
     
 #specify where the .osm will be saved
-save_path = OpenStudio::Path.new('C:/OSTraining/EX4/ex4_solution.osm')
+save_path = OpenStudio::Path.new('ex4_solution.osm')
 
 #save the model
 model.save(save_path, true)

@@ -4,7 +4,7 @@ require 'openstudio'
 model = OpenStudio::Model::Model.new()
 
 #specify where the .osm will be saved
-save_path = OpenStudio::Path.new('C:/OSTraining/EX1/ex1_solution.osm')
+save_path = OpenStudio::Path.new('ex1_solution.osm')
 
 #save the model
 model.save(save_path, true)

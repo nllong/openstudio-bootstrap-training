@@ -1,14 +1,14 @@
 require 'openstudio'
 
 # Setup model and output paths relative to this script
-model_path = OpenStudio::Path.new('C:/OSTraining/NoHVACExample.osm')
-output_path = OpenStudio::Path.new('C:/OSTraining/EX8/')
+model_path = OpenStudio::Path.new('../NoHVACExample.osm')
+output_path = OpenStudio::Path.new('.')
 
 # Find weather file
-epw_path = OpenStudio::Path.new("C:/OSTraining/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.epw")
+epw_path = OpenStudio::Path.new("../USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.epw")
 
 # add design days to model
-ddy_path = OpenStudio::Path.new("C:/OSTraining/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.ddy")
+ddy_path = OpenStudio::Path.new("../USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.ddy")
 ddy_file = OpenStudio::IdfFile::load(ddy_path).get
 ddy_workspace = OpenStudio::Workspace.new(ddy_file)
 reverse_translator = OpenStudio::EnergyPlus::ReverseTranslator.new
@@ -20,7 +20,7 @@ model = version_translator.loadModel(model_path).get
 
 model.addObjects(design_days)
 
-new_model_path = OpenStudio::Path.new("C:/OSTraining/EX8/ex8.osm")
+new_model_path = OpenStudio::Path.new("ex8.osm")
 model.save(new_model_path)
 
 # Create a runmanager

@@ -1,4 +1,4 @@
-Program Version,EnergyPlus-Windows-OMP-64 7.2.0.006, YMD=2013.07.27 09:45,IDD_Version 7.2.0.006
+Program Version,EnergyPlus-Darwin-OMP-64 8.0.0.008, YMD=2014.03.27 13:56,IDD_Version 8.0.0.008
    ** Warning ** IP: Note -- Some missing fields have been filled with defaults. See the audit output file for details.
    ** Warning ** No Timestep object found.  Number of TimeSteps in Hour defaulted to 4.
    ** Warning ** ManageSizing: For a zone sizing run, there must be at least 1 Sizing:Zone input object. SimulationControl Zone Sizing option ignored.
@@ -32,4 +32,4 @@ Program Version,EnergyPlus-Windows-OMP-64 7.2.0.006, YMD=2013.07.27 09:45,IDD_Ve
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 1 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 7 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 10.52sec
+   ************* EnergyPlus Completed Successfully-- 7 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  5.02sec

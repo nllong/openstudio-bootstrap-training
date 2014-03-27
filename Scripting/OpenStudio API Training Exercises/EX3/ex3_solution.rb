@@ -1,7 +1,7 @@
 require 'openstudio'
 
 #specify the .osm to open 
-model_path = OpenStudio::Path.new('C:/OSTraining/EX2/ex2_solution.osm')
+model_path = OpenStudio::Path.new('../EX2/ex2_solution.osm')
 
 #load the model, version translating if necessary
 if OpenStudio::exists(model_path)
@@ -104,7 +104,7 @@ default_const_set.setDefaultGroundContactSurfaceConstructions(default_ext_surfac
 model.getBuilding.setDefaultConstructionSet(default_const_set)
 
 #specify where the .osm will be saved
-save_path = OpenStudio::Path.new('C:/OSTraining/EX3/ex3_solution.osm')
+save_path = OpenStudio::Path.new('ex3_solution.osm')
 
 #save the model
 model.save(save_path, true)

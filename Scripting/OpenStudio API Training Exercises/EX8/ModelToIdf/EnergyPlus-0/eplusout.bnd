@@ -1,4 +1,4 @@
-Program Version,EnergyPlus-Windows-OMP-64 7.2.0.006, YMD=2013.07.27 09:45
+Program Version,EnergyPlus-Darwin-OMP-64 8.0.0.008, YMD=2014.03.27 13:56
 ! This file shows details about the branches, nodes, and other
 ! elements of the flow connections.
 ! This file is intended for use in "debugging" potential problems

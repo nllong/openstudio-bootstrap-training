@@ -17,7 +17,7 @@ desc "Run all examples"
 task :run_all do
   require 'parallel'
 
-  files = Dir.glob("./**/ex*.rb").delete_if {|x| x =~ /.*solution.*/ }
+  files = Dir.glob("./**/ex*_solution.rb") #.delete_if {|x| x =~ /.*solution.*/ }
   #files.each do |file|
   Parallel.each(files) do |file|
     currentdir = Dir.pwd

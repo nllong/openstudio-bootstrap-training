@@ -1,7 +1,7 @@
 require 'openstudio'
 
 #specify the .osm to open 
-model_path = OpenStudio::Path.new('Path/To/OSTraining/EX4/ex4_solution.osm')
+model_path = OpenStudio::Path.new('../EX4/ex4_solution.osm')
 
 #load the model, version translating if necessary
 if OpenStudio::exists(model_path)
@@ -55,7 +55,7 @@ end
 #assign this default schedule set to the two space types created earlier
 
 #specify where the .osm will be saved
-save_path = OpenStudio::Path.new('Path/To/OSTraining/EX5/ex5.osm')
+save_path = OpenStudio::Path.new('ex5.osm')
 
 #save the model
 model.save(save_path, true)

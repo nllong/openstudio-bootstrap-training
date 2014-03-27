@@ -1,7 +1,7 @@
 
 OS:Version,
-  {5ae60c7e-87c2-4ca4-babb-344528f08fb8}, !- Handle
-  1.0.0;                                  !- Version Identifier
+  {e848191f-5f95-4722-a2f9-f079aec191dc}, !- Handle
+  1.2.5;                                  !- Version Identifier
 
 OS:BuildingStory,
   {1ba289f2-ab05-4856-b5cc-3c20764a55e2}, !- Handle
@@ -10,7 +10,7 @@ OS:BuildingStory,
   5,                                      !- Nominal Floor to Floor Height {m}
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  ;                                       !- Group Rendering Name
+  {b2077bdc-8cea-4f12-afe8-ec6e09b3e941}; !- Group Rendering Name
 
 OS:Space,
   {2c8cbcd5-705a-40a5-a79a-5c311b205a2b}, !- Handle
@@ -469,25 +469,15 @@ OS:DefaultSubSurfaceConstructions,
 OS:DefaultConstructionSet,
   {554b52e6-53dc-4b25-9c03-939e71146e09}, !- Handle
   Building Default Constructions,         !- Name
-  {5b0411c8-5358-43e8-85a8-1813aa00be6a}, !- Default Exterior Surface Constructions Name
+  {9685aa01-9870-4df0-abcc-58b0d8ab2879}, !- Default Exterior Surface Constructions Name
   {0820ba5c-560e-4ad1-ac7d-32fb671874a6}, !- Default Interior Surface Constructions Name
   {5b0411c8-5358-43e8-85a8-1813aa00be6a}, !- Default Ground Contact Surface Constructions Name
-  {ce087169-f263-405e-a2a8-2781c0433406}, !- Default Exterior SubSurface Constructions Name
+  {1443586e-7b5c-4927-9180-75f214d17c32}, !- Default Exterior SubSurface Constructions Name
   {ce087169-f263-405e-a2a8-2781c0433406}, !- Default Interior SubSurface Constructions Name
   ,                                       !- Interior Partition Construction Name
   ,                                       !- Space Shading Construction Name
   ,                                       !- Building Shading Construction Name
   ;                                       !- Site Shading Construction Name
-
-OS:Building,
-  {5c0d8008-0498-4185-8d6e-601f48503a74}, !- Handle
-  Building 1,                             !- Name
-  ,                                       !- Building Type
-  ,                                       !- North Axis {deg}
-  ,                                       !- Nominal Floor to Floor Height {m}
-  ,                                       !- Space Type Name
-  {554b52e6-53dc-4b25-9c03-939e71146e09}, !- Default Construction Set Name
-  ;                                       !- Default Schedule Set Name
 
 OS:People:Definition,
   {cf3b8ba8-0fce-496e-9883-1639df47799a}, !- Handle
@@ -536,7 +526,7 @@ OS:SpaceType,
   Space Type A,                           !- Name
   ,                                       !- Default Construction Set Name
   {13d9a311-3062-4212-8ca8-404a51fe0dd7}, !- Default Schedule Set Name
-  ,                                       !- Group Rendering Name
+  {3ce568e0-4fb1-446c-81d7-e0d27a3728e6}, !- Group Rendering Name
   {d03c37a0-b9fc-4323-8140-302a6a4f1c39}; !- Design Specification Outdoor Air Object Name
 
 OS:People,
@@ -2004,4 +1994,175 @@ OS:ThermostatSetpoint:DualSetpoint,
   Thermostat Setpoint Dual Setpoint 2,    !- Name
   {e761a63d-8d5f-4a3b-be8d-7fa16a89b718}, !- Heating Setpoint Temperature Schedule Name
   {b71050b5-5902-4bc7-a659-5e08fafcde97}; !- Cooling Setpoint Temperature Schedule Name
+
+OS:Building,
+  {5c0d8008-0498-4185-8d6e-601f48503a74}, !- Handle
+  Building 1,                             !- Name
+  ,                                       !- Building Sector Type
+  ,                                       !- North Axis {deg}
+  ,                                       !- Nominal Floor to Floor Height {m}
+  ,                                       !- Space Type Name
+  {554b52e6-53dc-4b25-9c03-939e71146e09}, !- Default Construction Set Name
+  ;                                       !- Default Schedule Set Name
+
+OS:ClimateZones,
+  {04bb3de7-3e13-4037-b585-afb5b7ce6932}, !- Handle
+  ,                                       !- Active Institution
+  ,                                       !- Active Year
+  ASHRAE,                                 !- Climate Zone Institution Name 1
+  ANSI/ASHRAE Standard 169,               !- Climate Zone Document Name 1
+  2006,                                   !- Climate Zone Document Year 1
+  ,                                       !- Climate Zone Value 1
+  CEC,                                    !- Climate Zone Institution Name 2
+  California Climate Zone Descriptions,   !- Climate Zone Document Name 2
+  1995,                                   !- Climate Zone Document Year 2
+  ;                                       !- Climate Zone Value 2
+
+OS:YearDescription,
+  {e5835b4b-5e75-4e73-85bc-512b3e84be80}, !- Handle
+  ,                                       !- Calendar Year
+  Sunday;                                 !- Day of Week for Start Day
+
+OS:RadianceParameters,
+  {9419c03f-5df0-4441-b985-820fd827954c}, !- Handle
+  1,                                      !- Accumulated Rays per Record
+  0,                                      !- Direct Threshold
+  1,                                      !- Direct Certainty
+  1,                                      !- Direct Jitter
+  1,                                      !- Direct Pretest
+  6,                                      !- Ambient Bounces VMX
+  2,                                      !- Ambient Bounces DMX
+  4050,                                   !- Ambient Divisions VMX
+  512,                                    !- Ambient Divisions DMX
+  256,                                    !- Ambient Supersamples
+  0.001,                                  !- Limit Weight VMX
+  0.001,                                  !- Limit Weight DMX
+  500,                                    !- Klems Sampling Density
+  146;                                    !- Sky Discretization Resolution
+
+OS:SimulationControl,
+  {f11aad48-fadb-453c-9b4f-9ef012e7c83c}; !- Handle
+
+OS:Sizing:Parameters,
+  {5ab6fa15-bf71-4d4b-b746-c5739b64b0c2}, !- Handle
+  1.25,                                   !- Heating Sizing Factor
+  1.15;                                   !- Cooling Sizing Factor
+
+OS:ProgramControl,
+  {b97d8933-4e68-41f4-a634-12f7ac489429}; !- Handle
+
+OS:Timestep,
+  {6109ef6d-dcb6-4012-b7bf-f290e4e506d5}, !- Handle
+  6;                                      !- Number of Timesteps per Hour
+
+OS:OutputControl:ReportingTolerances,
+  {9943e8e7-0951-41c8-8973-a40cc6eb5be0}; !- Handle
+
+OS:ConvergenceLimits,
+  {176b0f94-bf0b-4340-9c11-5f7ff813c74d}; !- Handle
+
+OS:ShadowCalculation,
+  {3f42276a-ca67-4fc3-88db-d911466b76ee}, !- Handle
+  7,                                      !- Calculation Frequency
+  15000;                                  !- Maximum Figures in Shadow Overlap Calculations
+
+OS:SurfaceConvectionAlgorithm:Inside,
+  {042203e8-1239-4ddd-b102-bb1e3f9e1c2b}, !- Handle
+  TARP;                                   !- Algorithm
+
+OS:SurfaceConvectionAlgorithm:Outside,
+  {614c948c-f81a-4f02-bf8d-842f9095dec3}, !- Handle
+  DOE-2;                                  !- Algorithm
+
+OS:HeatBalanceAlgorithm,
+  {cafaf515-3f8a-4304-acf3-3483e474f930}, !- Handle
+  ConductionTransferFunction,             !- Algorithm
+  200;                                    !- Surface Temperature Upper Limit {F}
+
+OS:ZoneAirHeatBalanceAlgorithm,
+  {b87d5ab3-2f9d-4ae3-b89a-d686945c4db0}, !- Handle
+  AnalyticalSolution;                     !- Algorithm
+
+OS:ZoneAirContaminantBalance,
+  {8404f23e-20c2-4b57-8749-1a6a800f6f73}; !- Handle
+
+OS:ZoneCapacitanceMultiplier:ResearchSpecial,
+  {6562eba6-775d-49f5-8e33-ec369428b882}, !- Handle
+  ,                                       !- Temperature Capacity Multiplier
+  ,                                       !- Humidity Capacity Multiplier
+  ;                                       !- Carbon Dioxide Capacity Multiplier
+
+OS:RunPeriod,
+  {294d877b-59d6-41f5-9ed5-c430684aa23a}, !- Handle
+  Run Period 1,                           !- Name
+  1,                                      !- Begin Month
+  1,                                      !- Begin Day of Month
+  12,                                     !- End Month
+  31,                                     !- End Day of Month
+  ,                                       !- Use Weather File Holidays and Special Days
+  ,                                       !- Use Weather File Daylight Saving Period
+  ,                                       !- Apply Weekend Holiday Rule
+  ,                                       !- Use Weather File Rain Indicators
+  ,                                       !- Use Weather File Snow Indicators
+  ;                                       !- Number of Times Runperiod to be Repeated
+
+OS:DefaultSurfaceConstructions,
+  {9685aa01-9870-4df0-abcc-58b0d8ab2879}, !- Handle
+  Default Surface Constructions 3,        !- Name
+  {8c5cd6e0-77a6-4e8c-b2ae-15eec1e51703}, !- Floor Construction Name
+  {8c5cd6e0-77a6-4e8c-b2ae-15eec1e51703}, !- Wall Construction Name
+  {714187b4-0386-44fe-b3ff-c27627877448}; !- Roof Ceiling Construction Name
+
+OS:DefaultSubSurfaceConstructions,
+  {1443586e-7b5c-4927-9180-75f214d17c32}, !- Handle
+  Default Sub Surface Constructions 2,    !- Name
+  {9a5244f2-72db-425d-a378-33a82ccd4e4c}, !- Fixed Window Construction Name
+  ,                                       !- Operable Window Construction Name
+  {9a5244f2-72db-425d-a378-33a82ccd4e4c}, !- Door Construction Name
+  ,                                       !- Glass Door Construction Name
+  ,                                       !- Overhead Door Construction Name
+  ,                                       !- Skylight Construction Name
+  ,                                       !- Tubular Daylight Dome Construction Name
+  ;                                       !- Tubular Daylight Diffuser Construction Name
+
+OS:StandardsInformation:Construction,
+  {c2d20873-e065-4ccd-8974-2c9136b230c0}, !- Handle
+  {8c5cd6e0-77a6-4e8c-b2ae-15eec1e51703}; !- Construction Name
+
+OS:Rendering:Color,
+  {3ce568e0-4fb1-446c-81d7-e0d27a3728e6}, !- Handle
+  Rendering Color 1,                      !- Name
+  178,                                    !- Rendering Red Value
+  34,                                     !- Rendering Green Value
+  34;                                     !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {b2077bdc-8cea-4f12-afe8-ec6e09b3e941}, !- Handle
+  Rendering Color 2,                      !- Name
+  205,                                    !- Rendering Red Value
+  133,                                    !- Rendering Green Value
+  63;                                     !- Rendering Blue Value
+
+OS:WeatherFile,
+  {6d102ad4-687c-4a65-95d7-5492223a19b2}, !- Handle
+  Denver Centennial  Golden   Nr,         !- City
+  CO,                                     !- State Province Region
+  USA,                                    !- Country
+  TMY3,                                   !- Data Source
+  724666,                                 !- WMO Number
+  39.74,                                  !- Latitude {deg}
+  -105.18,                                !- Longitude {deg}
+  -7,                                     !- Time Zone {hr}
+  1829,                                   !- Elevation {m}
+  file:files/USA_CO_Golden-NREL.724666_TMY3.epw, !- Url
+  72673005;                               !- Checksum
+
+OS:Site,
+  {234f8041-d2ad-4f52-bc57-e90a163f25f5}, !- Handle
+  Site 1,                                 !- Name
+  39.74,                                  !- Latitude {deg}
+  -105.18,                                !- Longitude {deg}
+  -7,                                     !- Time Zone {hr}
+  1829,                                   !- Elevation {m}
+  ;                                       !- Terrain
 

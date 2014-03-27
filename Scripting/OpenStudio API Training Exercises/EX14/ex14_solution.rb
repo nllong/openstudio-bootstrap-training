@@ -1,8 +1,8 @@
 require 'openstudio'
 
 # Setup model and output paths relative to this script
-model_path = OpenStudio::Path.new('C:/OSTraining/PSZExample.osm')
-output_path = OpenStudio::Path.new('C:/OSTraining/EX14/')
+model_path = OpenStudio::Path.new('./PSZExample.osm')
+output_path = OpenStudio::Path.new('./EX14/')
 
 # Load model
 if OpenStudio::exists(model_path)
@@ -27,7 +27,7 @@ new_model_path = output_path / OpenStudio::Path.new('ex14.osm')
 model.save(new_model_path,true)
 
 # Find weather file
-epw_path = OpenStudio::Path.new("C:/OSTraining/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.epw")
+epw_path = OpenStudio::Path.new("./USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.epw")
 
 # Create a runmanager
 db = output_path / OpenStudio::Path.new('runmanager.db')

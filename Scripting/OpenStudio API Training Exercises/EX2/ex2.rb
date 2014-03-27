@@ -1,7 +1,7 @@
 require 'openstudio'
 
 #specify the .osm to open 
-model_path = OpenStudio::Path.new('C:/OSTraining_solution/EX1/ex1_solution.osm')
+model_path = OpenStudio::Path.new('._solution/EX1/ex1_solution.osm')
 
 #load the model, version translating if necessary
 if OpenStudio::exists(model_path)
@@ -53,7 +53,7 @@ end
 #match surfaces for each space in the vector
 
 #specify where the .osm will be saved
-save_path = OpenStudio::Path.new('C:/OSTraining_solution/EX2/ex2.osm')
+save_path = OpenStudio::Path.new('._solution/EX2/ex2.osm')
 
 #save the model
 model.save(save_path, true)
